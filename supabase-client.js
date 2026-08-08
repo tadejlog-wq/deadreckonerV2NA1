@@ -19,8 +19,8 @@
 //    not the real auth story.
 // ============================================================
 
-const SUPABASE_URL = 'YOUR_SUPABASE_PROJECT_URL';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_URL = 'https://ksvxslxwrfembxhmavqw.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzdnhzbHh3cmZlbWJ4aG1hdnF3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIzMjY5MTYsImV4cCI6MjA5NzkwMjkxNn0.DK-qvbm-G6Nf8SrUf-qAaBRqoWuLuUxsmHM93SvACE0';
 
 let _client = null;
 
