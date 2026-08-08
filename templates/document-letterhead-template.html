@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Document Letterhead Template — Deadreckoner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--teal:#14B0A0;--ink:#1a1a1a;--muted:#666}
+  *{box-sizing:border-box}
+  body{margin:0;background:#333;font-family:"IBM Plex Sans",sans-serif}
+  .toolbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 24px;background:#111;border-bottom:1px solid rgba(255,255,255,0.09)}
+  .toolbar span{color:#8B9196;font-size:13px}
+  .toolbar button{padding:8px 16px;border:1px solid var(--teal);border-radius:6px;background:var(--teal);color:#07110f;font-weight:600;font-size:13px;cursor:pointer}
+
+  .page{width:210mm;min-height:297mm;margin:32px auto;padding:20mm 18mm;background:#fff;box-shadow:0 20px 50px rgba(0,0,0,.5);color:var(--ink)}
+  .letterhead-header{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:20px;border-bottom:2px solid var(--teal);margin-bottom:40px}
+  .letterhead-logo{font-family:"IBM Plex Mono",monospace;font-size:16px;font-weight:500;color:var(--ink)}
+  .letterhead-logo:before{content:"";display:inline-block;width:8px;height:8px;margin-right:8px;background:var(--teal);border-radius:2px}
+  .letterhead-meta{text-align:right;font-size:11px;color:var(--muted);line-height:1.6}
+
+  .doc-date{font-size:12px;color:var(--muted);margin-bottom:24px}
+  .doc-recipient{font-size:13px;line-height:1.6;margin-bottom:28px}
+  .doc-body{font-size:13px;line-height:1.7;color:#333}
+  .doc-body p{margin:0 0 16px}
+
+  .letterhead-footer{position:absolute;bottom:15mm;left:18mm;right:18mm;padding-top:14px;border-top:1px solid #ddd;display:flex;justify-content:space-between;font-size:10px;color:var(--muted)}
+
+  @media print{
+    .toolbar{display:none}
+    body{background:#fff}
+    .page{margin:0;box-shadow:none;width:auto;min-height:auto}
+  }
+</style>
+</head>
+<body>
+  <div class="toolbar">
+    <span>Document Letterhead Template — replace placeholder text, keep header/footer structure</span>
+    <button onclick="window.print()">Export as PDF</button>
+  </div>
+
+  <div class="page">
+    <div class="letterhead-header">
+      <div class="letterhead-logo">[Company Name]</div>
+      <div class="letterhead-meta">
+        [Street Address]<br>
+        [City, Country]<br>
+        [company.com]
+      </div>
+    </div>
+
+    <div class="doc-date">[Month DD, YYYY]</div>
+    <div class="doc-recipient">
+      [Recipient Name]<br>
+      [Recipient Title]<br>
+      [Recipient Company]
+    </div>
+
+    <div class="doc-body">
+      <p>Dear [Recipient Name],</p>
+      <p>[Body paragraph one — replace with the actual content of this letter, contract, or official document. Keep line length and spacing consistent with this template.]</p>
+      <p>[Body paragraph two.]</p>
+      <p>Sincerely,<br><br>[Sender Name]<br>[Sender Title]</p>
+    </div>
+
+    <div class="letterhead-footer">
+      <span>[Company Name] — Confidential</span>
+      <span>Page 1 of 1</span>
+    </div>
+  </div>
+</body>
+</html>
