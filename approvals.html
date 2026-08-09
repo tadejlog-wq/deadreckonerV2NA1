@@ -6700,11 +6700,11 @@
     </div>
     <div class="fp-divider"></div>
     <div class="fp-details">
-      <h2 class="fp-filename" id="fp-filename">Document_name.pdf</h2>
-      <p class="fp-meta" id="fp-meta">Last change: 06.06.2026 · 15:33</p>
+      <h2 class="fp-filename" id="fp-filename">Select a file to preview</h2>
+      <p class="fp-meta" id="fp-meta">Last change: —</p>
       <div class="fp-section-block">
         <h3 class="fp-section-label">File description</h3>
-        <p class="fp-description">Lorem ipsum veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c</p>
+        <p class="fp-description">No description provided for this file yet.</p>
       </div>
       <div class="fp-section-block">
         <h3 class="fp-section-label">File shared with</h3>
@@ -6842,6 +6842,8 @@
 </script>
 <script defer src="sidebar.js"></script>
 <script defer src="supabase-client.js"></script>
+<script defer src="auth-guard.js"></script>
+<script defer src="modal-guard.js"></script>
 <script defer>
   document.addEventListener('DOMContentLoaded', () => {
     if (window.deadreckonerDB) window.deadreckonerDB.applyRoleGating();
@@ -7110,7 +7112,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
 <style>
   .aem-shell{--panel-radius:8px}
-  .aem-shell .modal-backdrop{position:fixed;inset:0;z-index:35;display:none;place-items:center;padding:24px;background:rgba(5,5,7,.72)}
+  .aem-shell .modal-backdrop{position:fixed;inset:0;z-index:120;display:none;place-items:center;padding:24px;background:rgba(5,5,7,.72)}
   .aem-shell .modal-backdrop.open{display:grid}
   .aem-modal{width:min(640px,100%);max-height:calc(100vh - 48px);overflow:auto;background:rgba(22,22,28,0.92);backdrop-filter:blur(28px) saturate(160%) brightness(0.82);-webkit-backdrop-filter:blur(28px) saturate(160%) brightness(0.82);border:1px solid rgba(255,255,255,0.09);border-radius:var(--panel-radius);box-shadow:0 24px 80px rgba(0,0,0,.5);color:var(--text-primary);font-family:"IBM Plex Sans", "IBM Plex Sans Fallback", sans-serif}
   .aem-head{display:flex;align-items:center;gap:16px;padding:24px;border-bottom:1px solid rgba(255,255,255,0.09)}
@@ -7314,7 +7316,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
 <style>
   .rf-shell{--panel-radius:8px}
-  .rf-shell .modal-backdrop{position:fixed;inset:0;z-index:35;display:none;place-items:center;padding:24px;background:rgba(5,5,7,.72)}
+  .rf-shell .modal-backdrop{position:fixed;inset:0;z-index:120;display:none;place-items:center;padding:24px;background:rgba(5,5,7,.72)}
   .rf-shell .modal-backdrop.open{display:grid}
   .rf-modal{width:min(560px,100%);max-height:calc(100vh - 48px);overflow:auto;background:rgba(22,22,28,0.92);backdrop-filter:blur(28px) saturate(160%) brightness(0.82);-webkit-backdrop-filter:blur(28px) saturate(160%) brightness(0.82);border:1px solid rgba(255,255,255,0.09);border-radius:var(--panel-radius);box-shadow:0 24px 80px rgba(0,0,0,.5);color:var(--text-primary);font-family:"IBM Plex Sans", "IBM Plex Sans Fallback", sans-serif}
   .rf-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;border-bottom:1px solid rgba(255,255,255,0.09)}

@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://*.supabase.co; object-src 'none'; base-uri 'self';">
 
   <style>
     @font-face {
@@ -3014,6 +3014,7 @@
       .pill-item { height: 42px; padding: 0 10px; }
     }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 </head>
 
 <body>
@@ -3465,11 +3466,11 @@
     </div>
     <div class="fp-divider"></div>
     <div class="fp-details">
-      <h2 class="fp-filename" id="fp-filename">Document_name.pdf</h2>
-      <p class="fp-meta" id="fp-meta">Last change: 06.06.2026 · 15:33</p>
+      <h2 class="fp-filename" id="fp-filename">Select a file to preview</h2>
+      <p class="fp-meta" id="fp-meta">Last change: —</p>
       <div class="fp-section-block">
         <h3 class="fp-section-label">File description</h3>
-        <p class="fp-description">Lorem ipsum veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c</p>
+        <p class="fp-description">No description provided for this file yet.</p>
       </div>
       <div class="fp-section-block">
         <h3 class="fp-section-label">File shared with</h3>
@@ -3496,6 +3497,8 @@
 </div>
 
 <script defer src="sidebar.js"></script>
+<script defer src="supabase-client.js"></script>
+<script defer src="auth-guard.js"></script>
 
 </body>
 </html>

@@ -3549,11 +3549,11 @@
     </div>
     <div class="fp-divider"></div>
     <div class="fp-details">
-      <h2 class="fp-filename" id="fp-filename">Document_name.pdf</h2>
-      <p class="fp-meta" id="fp-meta">Last change: 06.06.2026 · 15:33</p>
+      <h2 class="fp-filename" id="fp-filename">Select a file to preview</h2>
+      <p class="fp-meta" id="fp-meta">Last change: —</p>
       <div class="fp-section-block">
         <h3 class="fp-section-label">File description</h3>
-        <p class="fp-description">Lorem ipsum veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c</p>
+        <p class="fp-description">No description provided for this file yet.</p>
       </div>
       <div class="fp-section-block">
         <h3 class="fp-section-label">File shared with</h3>
@@ -3581,11 +3581,13 @@
 
 <script defer src="sidebar.js"></script>
 <script defer src="supabase-client.js"></script>
+<script defer src="auth-guard.js"></script>
+<script defer src="modal-guard.js"></script>
 
 
 <style>
   .ob-shell{--panel-radius:8px}
-  .ob-shell .modal-backdrop{position:fixed;inset:0;z-index:60;display:none;place-items:center;padding:24px;background:rgba(5,5,7,.82)}
+  .ob-shell .modal-backdrop{position:fixed;inset:0;z-index:140;display:none;place-items:center;padding:24px;background:rgba(5,5,7,.82)}
   .ob-shell .modal-backdrop.open{display:grid}
   .ob-modal{width:min(480px,100%);background:rgba(22,22,28,0.94);backdrop-filter:blur(28px) saturate(160%) brightness(0.82);-webkit-backdrop-filter:blur(28px) saturate(160%) brightness(0.82);border:1px solid rgba(255,255,255,0.09);border-radius:var(--panel-radius);box-shadow:0 24px 80px rgba(0,0,0,.6);color:var(--text-primary);font-family:"IBM Plex Sans","IBM Plex Sans Fallback",sans-serif;overflow:hidden}
   .ob-head{padding:28px 28px 20px;text-align:center}
